@@ -1,0 +1,29 @@
+<ion-view title="Login" name="login-view">
+    <ion-content class="padding">
+        <div class="login-box">
+            <div>
+                <div class="login-logo">
+                    <font size="6">
+                        <strong>magazineluiza</strong>
+                    </font>
+                </div>
+            </div>
+            <!-- /.login-logo -->
+            <div class="login-box-body">
+                <p class="login-box-msg"><i class="fa fa-money"></i>  Holerite</p>
+                <form class="login-form">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" required placeholder="Usuário" ng-model="loginData.user">
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div  class="form-group has-feedback">
+                        <input type="password" class="form-control" required placeholder="Senha" ng-model="loginData.password">
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <button class="btn btn-primary btn-block" ng-click="autenticar()">Acessar</button>
+                </form>
+            </div>
+            <!-- /.login-box-body -->
+        </div>
+    </ion-content>
+</ion-view>
